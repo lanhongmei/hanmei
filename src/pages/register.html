@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/register.css" />
+</head>
+<body>
+<!-- 购物导航 -->
+<div id="nav">
+    <a href="#">
+        <i class="iconfont icon-erji"></i>
+        <span>小v客服</span>
+    </a>
+    <a href="#" class="why">
+        <i class="iconfont icon-yijianfankui"></i>
+        <span>帮助中心</span>
+    </a>
+    <a href="#" class="top-go">
+        <i class="iconfont icon-xia"></i>
+        <span>返回顶部</span>
+    </a>
+</div>
+<!-- 主体 -->
+<div id="wrap">
+    <div class="logo">
+        <img src="../images/vivo.jpg" />
+    </div>
+    <h2>账号注册</h2>
+    <div class="language">
+        <input id="usernum" type="text" placeholder="请输入账号" /><i class="iconfont icon-xia"></i>
+    </div>
+    <p>成功注册帐号后，国家/地区将不能被修改</p>
+    <div class="phonenum">
+        +86<i class="iconfont icon-xia"></i>
+        <input id="password" type="password" placeholder="请输入密码" />
+    </div>
+    <div class="agreement">
+        <input type="checkbox" />我已阅读并接受<a href="#">《服务协议》</a>和<a href="#">《隐私政策》</a>
+    </div>
+    <button class="next-btn">下一步</button>
+</div>
+<!-- 底部 -->
+<div id="footer">
+    <div class="online">
+        <i class="iconfont icon-xinxi"></i>在线客服<i class="iconfont icon-dianhua"></i>400-678-9688（24小时全国服务热线）
+    </div>
+    <p>COPYRIGHT @2020 广东步步高电子工业有限公司 版权所有 保留一切权利 | 隐私政策 | 法律声明 | 粤B2-20080267 | 粤ICP备05100288号</p>
+</div>
+
+<script src="../lib/jquery-1.12.4.js"></script>
+<script type="text/javascript">
+$('.next-btn').click(function(){
+    $.ajax({
+        method:'post',
+        url:'../server/register.php',
+        data:{
+            usernum:$('#usernum').val(),
+            password:$('#password').val()
+        },
+        success:function(data){
+            if(data.code==1){
+                location.href="./login.html"
+            }else{
+                alert(data.msg)
+            }
+        },
+        dataType:'json'
+    })
+})
+$('.top-go').click(function(){
+    $('html').animate({scrollTop:0},1000);
+})
+
+</script>
+</body>
+</html>

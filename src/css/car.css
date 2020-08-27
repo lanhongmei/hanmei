@@ -1,0 +1,254 @@
+/* 购物导航 */
+#nav{
+    position:fixed;
+    right:0;
+    bottom:100px;
+    width:50px;
+    min-height:150px;
+    z-index:999;
+}
+#nav a{
+    position:relative;
+    display:block;
+    width:100%;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    background:#fff;
+}
+#nav a:hover{
+    background:#e9e9e9;
+}
+#nav a:hover span{
+    display:block;
+}
+#nav a i{
+    font-size:26px;
+    color:#000;
+}
+#nav a span{
+    position:absolute;
+    top:0;
+    right:56px;
+    width:134px;
+    height:48px;
+    border:1px solid #ebebeb;
+    line-height:48px;
+    text-align:center;
+    font-size:16px;
+    color:#4c4c4c;
+    background:#fff;
+    display:none;
+}
+/* 头部 */
+#head{
+    position:relative;
+    z-index:666;
+}
+#head .head #nav-show{
+    position:absolute;
+    left:0;
+    top:-332px;
+    width:100%;
+    height:300px;
+    background:#fff;
+    z-index:-1;
+}
+#head .head .nav-show{
+    height:300px;
+    background:#fff;
+}
+#head .head .nav-show>li{
+    width:150px;
+    height:180px;
+    float:left;
+    margin:0 10px;
+    padding:20px 15px;
+}
+#head .head .nav-show>li>p{
+    width:110px;
+    line-height:66px;
+    font-size:18px;
+    color:#000;
+    text-align:center;
+}
+#head .head .nav-show>li .sfq{
+    width:150px;
+    height:180px;
+    position:relative;
+    overflow:hidden;
+    
+}
+#head .head .nav-show>li .sfq li{
+    width:100px;
+    height:180px;
+    display:none;
+    float:left;
+}
+#head .head .nav-show>li .sfq li:nth-child(3){
+    display:block;
+}
+#head .head .nav-show>li .sfq a{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+}
+#head .head .nav-show>li .sfq li img{
+    width:100%;
+    height:100%;
+}
+/* 主体 */
+#main{
+    width:100%;
+    background:#f7f7f7;
+}
+#main .main{
+    background:#f7f7f7;
+}
+#main .main .keep{
+    height:66px;
+    background:#fff;
+    margin-bottom:20px;
+    font-size:18px;
+    color:#333;
+    line-height:66px;
+    text-align:center;
+}
+#main .main .keep a{
+    float:right;
+    margin-right:38px;
+    font-size:14px;
+    color:#333;
+} 
+#main .main .keep a:hover{
+    color:#fa0d4b;
+}
+#main .main .keep a i{
+    font-size:10px;
+    color:#333;
+    margin-left:8px;
+}
+#main .main .keep a:hover i{
+    color:#fa0d4b;
+}
+#main .main .keep img{
+    width:88px;
+    height:66px;
+}
+#main .main .car{
+    min-height:294px;
+}
+#main .main .car-box{
+    height:294px;
+    background:#fff;
+    padding:30px;
+    box-sizing:border-box;
+}
+#car-img{
+    float:left;
+    margin-left:66px;
+    width:150px;
+    height:200px;
+}
+.xinxi{
+    float:left; 
+    width:300px;
+    height:200px;
+    margin-left:30px;
+}
+#car-name{
+    font-size:36px;
+    line-height:50px;
+}
+#price{
+    font-size:18px;
+    color:#f63535;
+    font-weight:bold;
+    line-height:88px;
+}
+.add_del{
+    float:right; 
+    width:250px;
+    height:100%;
+    line-height:200px;
+}
+#del{
+    display:block;
+    width:100px;
+    height:44px;
+    border:1px solid #efefef;
+    background:#fff;
+    color:#fa0d4b;
+}
+#reduce{
+    width:60px;
+    height:44px;
+    text-align:center;
+    border:1px solid #efefef;
+    background:#fff;
+}
+#add{
+    width:60px;
+    height:44px;
+    text-align:center;
+    border:1px solid #efefef;
+    background:#fff;
+}
+#num{
+    display:inline-block;
+    width:60px;
+    text-align:center;
+    background:#fff;
+}
+#main .main .like{
+    width:100%;
+}
+#main .main .like .title{
+    height:68px;
+    line-height:68px;
+    font-size:20px;
+    color:#333;
+}
+#main .main .like ul{
+    min-height:1560px;
+}
+#main .main .like ul li{
+    width:293px;
+    height:380px;
+    margin-right:9px;
+    float:left;
+    background:#fff;
+    text-align:center;
+    position:relative;
+    margin-bottom:10px;
+}
+#main .main .like ul li a{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+}
+#main .main .like ul li:nth-child(4n){
+    margin-right:0;
+}
+#main .main .like ul li img{
+    margin:42px 0 24px 0;
+}
+#main .main .like ul li .p01{
+    font-size:18px;
+    color:#333;
+}
+#main .main .like ul li .p02{
+    font-size:14px;
+    line-height:42px;
+    color:#333;
+    margin-bottom:32px;
+}
+#main .main .like ul li strong{
+    font-size:12px;
+    color:#f63535;
+    font-weight:bold;
+}

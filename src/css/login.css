@@ -1,0 +1,234 @@
+#login{
+    width:100%;
+    height:780px;
+    background:#b9d3f8;
+}
+#login .wrap{
+    position:relative;
+}
+#login .wrap>a{
+    position:absolute;
+    top:0;
+    left:243px;
+    width:145px;
+    height:52px;
+    color:#fff;
+    font-size:24px;
+    font-weight:bold;
+    line-height:52px;
+    text-align:center;
+    background:#456fff;
+}
+#login .wrap img{
+    width:100%;
+    height:100%;
+}
+#login .wrap .login{
+    position:absolute;
+    top:74px;
+    right:0;
+    width:360px;
+    height:670px;
+    background:#fff;
+    padding:0 30px;
+}
+#login .wrap .login img{
+    width:160px;
+    height:42px;
+    margin-top:30px;
+    margin-left:100px;
+}
+#login .wrap .login .mode{
+    font-size:20px;
+    line-height:60px;
+    color:#000;
+    text-align:center;
+}
+#login .wrap .login .cut-mode{
+    height:32px;
+    margin-bottom:10px;
+}
+#login .wrap .login .cut-mode .cut{
+    float:right;
+    line-height:32px;
+    font-size:14px;
+    color:#456fff;
+}
+#login .wrap .login .phone-num{
+    height:32px;
+    border:1px solid #dedfe0;
+    margin-bottom:15px;
+    padding:12px 7px;
+}
+#login .wrap .login .phone-num span{
+    height:100%;
+    line-height:32px;
+    font-size:12px;
+    color:#000;
+}
+#login .wrap .login .phone-num span i{
+    font-size:14px;
+    color:#4c4c4c;
+    margin:0 20px;
+}
+#login .wrap .login .phone-num input{
+    height:100%;
+    width:250px;
+    border:none;
+    font-size:16px;
+    color:#aaa;
+    line-height:32px;
+}
+#login .wrap .login .auth-code{
+    height:32px;
+    border:1px solid #dedfe0;
+    padding:12px 7px;
+}
+#login .wrap .login .auth-code input{
+    width:226px;
+    height:100%;
+    border:none;
+    font-size:16px;
+    color:#aaa;
+    line-height:32px;
+}
+#login .wrap .login .auth-code .get{
+    display:inline-block;
+    width:107px;
+    border-left:1px solid #dedfe0;
+    font-size:14px;
+    line-height:32px;
+    color:#456fff;
+    text-align:center;
+}
+#login .wrap .login .check-box{
+    height:56px;
+    margin-bottom:5px;
+}
+#login .wrap .login .check-box input{
+    width:16px;
+    height:16px;
+    border:1px solid #dedfe0;
+    margin-left:227px;
+    background:none;
+    vertical-align:-3px;
+}
+#login .wrap .login .check-box span{
+    font-size:14px;
+    line-height:56px;
+    color:#666;
+    margin-left:4px;
+}
+#login .wrap .login .login-box{
+    height:48px;
+    margin-bottom:15px;
+}
+#login .wrap .login .login-box .login-btn{
+    width:100%;
+    height:100%;
+    background:#4288ff;
+    font-size:16px;
+    line-height:48px;
+    color:#fff;
+    border:none;
+    padding:0;
+}
+#login .wrap .login .sign-box{
+    height:46px;
+    border:1px solid #4288ff;
+    margin-bottom:15px;
+}
+#login .wrap .login .sign-box .sign-btn{
+    width:100%;
+    height:100%;
+    line-height:46px;
+    text-align:center;
+    border:none;
+    background:none;
+    font-size:16px;
+    color:#4288ff;
+}
+#login .wrap .login .wait{
+    height:40px;
+    line-height:20px;
+    font-size:14px;
+    color:#999;
+}
+#login .wrap .login .forget{
+    height:60px;
+    text-align:center;
+    line-height:60px;
+}
+#login .wrap .login .forget span{
+    font-size:14px;
+    color:#666;
+}
+#login .wrap .login .other{
+    height:38px;
+    text-align:center;
+    line-height:38px;
+}
+#login .wrap .login .other span:nth-child(1),#login .wrap .login .other span:nth-child(3){
+    display:inline-block;
+    width:130px;
+    height:1px;
+    background:#ccc;
+}
+#login .wrap .login .other span:nth-child(2){
+    font-size:12px;
+    color:#999;
+    margin:0 8px;
+}
+#login .wrap .login .icon{
+    height:36px;
+    line-height:32px;
+    text-align:center;
+}
+#login .wrap .login .icon i{
+    font-size:24px;
+    margin:0 10px;
+    color:#7f98ff;
+    cursor:pointer;
+}
+#login .wrap .login .icon i:hover{
+    color:#456fff;
+}
+
+
+/* 底部 */
+#footer{
+    width:100%;
+    height:86px;
+    background:#f7f7f7;
+    padding-top:136px;
+}
+#footer div{
+    text-align:center;
+}
+#footer div a{
+    margin-right:34px;
+    font-size:12px;
+    color:#333;
+}
+#footer div a i{
+    margin-right:14px;
+    font-size:16px;
+    color:#333;
+}
+#footer div span i{
+    margin-right:14px;
+    font-size:16px;
+    color:#333;
+}
+#footer div a:hover{
+    color:#456fff;
+}
+#footer div a:hover i{
+    color:#456fff;
+}
+#footer p{
+    text-align:center;
+    line-height:44px;
+    font-size:12px;
+    color:#9d9d9d;
+}

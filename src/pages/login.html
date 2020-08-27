@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/login.css" />
+</head>
+<body>
+<!-- 登录 -->
+<div id="login">
+    <div class="wrap container">
+        <a href="#">ViVO</a>
+        <img src="https://usrsyswsdl.vivo.com.cn/usermng/1592451823586.jpg" />
+        <div class="login">
+            <img src="../images/vivo.jpg" />
+            <div class="mode">短信验证码登录</div>
+            <div class="cut-mode">
+                <span class="cut">账号登录</span>
+            </div>
+            <div class="phone-num">
+                <span>+86<i class="iconfont icon-xia"></i></span>
+                <input id="usernum" type="text" placeholder="请输入手机号" />
+            </div>
+            <div class="auth-code">
+                <input id="password" type="text" placeholder="请输入验证码" >
+                <span class="get">获取验证码</span>
+            </div>
+            <div class="check-box">
+                <input type="checkbox" />
+                <span>两周内自动登录</span>
+            </div>
+            <div class="login-box">
+                <button class="login-btn">登录</button>
+            </div>
+            <div class="sign-box">
+                <button class="sign-btn">注册vivo账号</button>
+            </div>
+            <div class="wait">
+                短信可能会有延时，请耐心等待，如果长时间未收到短信，请60后重新获取
+            </div>
+            <div class="forget">
+                <span>忘记密码</span> 
+            </div>
+            <div class="other">
+                <span></span>
+                <span>其它方式登录</span>
+                <span></span>
+            </div>
+            <div class="icon">
+                <i class="iconfont icon-qq"></i>
+                <i class="iconfont icon-qq"></i>
+                <i class="iconfont icon-qq"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 底部 -->
+<div id="footer">
+   <div>
+       <a href="#"><i class="iconfont icon-xinxi"></i>在线客服</a>
+       <span><i class="iconfont icon-dianhua"></i>400-678-9688（24小时全国服务热线）</span>
+   </div>
+   <p>Copyright ©2011-2020广东天赢网络科技有限公司版权所有保留一切权利 | 隐私政策 | 法律声明 | 营业执照 | 粤B2-20080267 | 粤ICP备14052990号</p>
+</div>
+
+<script src="../lib/jquery-1.12.4.js"></script>
+<script type="text/javascript">
+$('.login-btn').click(function(){
+    $.ajax({
+        method:'post',
+        url:'../server/login.php',
+        data:{
+            usernum:$('#usernum').val(),
+            password:$('#password').val()
+        },
+        success:function(data){
+            if(data.code==1){
+                localStorage.setItem('usernum',data.data.usernum)
+                location.href="./car.html"
+            }else{
+                alert(data.msg);
+            }
+        },
+        dataType:'json'
+    })
+})
+
+
+</script>
+</body>
+</html>
